@@ -1,5 +1,4 @@
 # FileScope
-P2P file sharing Tool
 a P2P file sharing application that connects to Gnutella, Gnutella2, eDonkey, and OpenNap. It is cross-platform and written C#.
 
     Completely FREE
