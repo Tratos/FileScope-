@@ -7,8 +7,8 @@ Credits:
     Email: mz392@nyu.edu
     Homepage: http://www.filescope.com, http://www.sf.net/projects/filescope
 
-    Update for Compile's with VS2017 added. 
-
+    
+    2022 Update for Compile's with VS2017 added by Tratos. 
 
     Completely FREE
     No ads or bundled software (spyware, adware, etc.)
