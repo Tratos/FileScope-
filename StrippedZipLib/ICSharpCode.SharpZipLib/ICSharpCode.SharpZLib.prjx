@@ -1,0 +1,45 @@
+<Project name="StrippedZipLib" description="creates a console C# project" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="C#">
+  <Contents>
+    <File name=".\Main.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\AssemblyInfo.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Checksums\IChecksum.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Checksums\Adler32.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Checksums\Crc32.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ZipException.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Checksums\StrangeCrc.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\PendingBuffer.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\InflaterDynHeader.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\InflaterHuffmanTree.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\DeflaterPending.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\DeflaterHuffman.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\DeflaterEngine.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\Inflater.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\DeflaterConstants.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\Deflater.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\Streams\DeflaterOutputStream.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\Streams\InflaterInputStream.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\Streams\StreamManipulator.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\Streams\OutputWindow.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression" subtype="Directory" buildaction="Compile" dependson="" data="" />
+    <File name=".\Zip\Compression\Streams" subtype="Directory" buildaction="Compile" dependson="" data="" />
+  </Contents>
+  <References />
+  <DeploymentInformation target="" script="" strategy="File" />
+  <Configuration runwithwarnings="True" name="Release">
+    <CodeGeneration runtime="MsNet" compiler="Csc" warninglevel="4" includedebuginformation="False" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="" generatexmldocumentation="False" win32Icon="" />
+    <Execution commandlineparameters="" consolepause="True" />
+    <Output directory=".\" assembly="StrippedZipLib" />
+  </Configuration>
+  <Configurations active="Release">
+    <Configuration runwithwarnings="True" name="Debug">
+      <CodeGeneration runtime="MsNet" compiler="Csc" warninglevel="4" includedebuginformation="True" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" target="Library" definesymbols="" generatexmldocumentation="True" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\" assembly="ICSharpCode.SharpZipLib" />
+    </Configuration>
+    <Configuration runwithwarnings="True" name="Release">
+      <CodeGeneration runtime="MsNet" compiler="Csc" warninglevel="4" includedebuginformation="False" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\" assembly="StrippedZipLib" />
+    </Configuration>
+  </Configurations>
+</Project>

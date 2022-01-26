@@ -1,0 +1,16 @@
+This is a miniaturized version of ICSharpCode's SharpZipLib with some hacks.
+
+Here are the changes:
+
+Took out SharpZLibTestCases/, BZip2/, GZip/, Tar/, ZipConstants.cs, ZipEntry.cs, ZipFile.cs, ZipInputStream.cs, ZipOutputStream.cs
+
+ICSharpCode.SharpZipLib/Zip/Compression/Streams/InflaterInputStream.cs:
+	Fill() return type is now bool instead of void... it returns true if the defalted stream doesn't end early
+	Read(byte[] b, int off, int len) returns -5 when the deflated stream ends early
+
+ICSharpCode.SharpZipLib/AssemblyInfo.cs:
+	Now the assembly title is StrippedZipLib
+	Also, AssemblyDelaySign and AssemblyKeyFile attributes are commented out
+
+ICSharpCode.SharpZipLib/Main.cs:
+	Took out "using ICSharpCode.SharpZipLib.BZip2" and code in Main(string[] args)

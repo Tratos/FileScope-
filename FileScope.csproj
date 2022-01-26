@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.0.9466</ProductVersion>
+    <SchemaVersion>1.0</SchemaVersion>
+    <ProjectGuid>{88412B07-2305-4DC8-AF91-760C2B7E2CC8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>FileScope</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FileScope</RootNamespace>
+    <StartupObject>FileScope.StartApp</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>C:\Documents and Settings\Administrator\Desktop\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="StrippedZipLib">
+      <Name>StrippedZipLib</Name>
+      <HintPath>C:\Documents and Settings\Administrator\Desktop\Debug\StrippedZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Chatter\Chat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Chatter\ChatHandShake.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Chatter\ChatManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Chatter\ChatProcessData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Downloader\Downloader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Downloader\DownloadManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Downloader\ReQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\EDonkey\ConnectionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\EDonkey\ProcessData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\EDonkey\Protocol\Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\EDonkey\Protocol\Packet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\EDonkey\Sck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\EDonkey\StartStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\ConnectionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\HostCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Protocol\Handshake.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Protocol\Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Protocol\PacketFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Protocol\ProcessData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Protocol\QueryRouteTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Protocol\UDP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Sck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Search.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\StartStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella2\Ultrapeer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\ConnectionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\PongCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\ProcessThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\Bye.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\Handshake.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\Ping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\Pong.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\Push.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\Query.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\QueryHit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Protocol\QueryRouteTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Router.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Sck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\StartStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Gnutella\Vendor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\GUIBridge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\HashEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Listener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\OpenNap\ConnectionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\OpenNap\ProcessData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\OpenNap\Protocol\Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\OpenNap\Protocol\Packet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\OpenNap\Sck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\OpenNap\StartStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\StartApp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Stats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\UniQueryHit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Uploader\Uploader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Uploader\UploadManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\Base32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\Endian.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\FileType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\GoodTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\GUID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\Hashing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\HashSums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\IPfilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\Keywords.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\md4.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Utilities\VersionChecker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\BrowseForFolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Controls\ChatPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Controls\ChatTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Controls\Connection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Controls\HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Controls\Library.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Controls\Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Controls\SearchTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Controls\Transfers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\AboutDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\BrowseDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\ChattersDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\DownloadUrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\FileAlertDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\MainDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\MoreSearchInfoDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\NewVersionDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\OptionsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\TransfersMoreInfoDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Dialogs\WizardDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\ListViewSorter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\LVICompare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\OwnerDraw\ElMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\OwnerDraw\ElTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SWF-UI\Themes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="License.txt" />
+    <Content Include="README.txt" />
+    <Content Include="StrippedZipLib.dll" />
+    <Content Include="TODO.txt" />
+    <EmbeddedResource Include="SWF-UI\Controls\ChatPage.resx">
+      <DependentUpon>ChatPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Controls\ChatTabPage.resx">
+      <DependentUpon>ChatTabPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Controls\Connection.resx">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Controls\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Controls\Library.resx">
+      <DependentUpon>Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Controls\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Controls\SearchTabPage.resx">
+      <DependentUpon>SearchTabPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Controls\Transfers.resx">
+      <DependentUpon>Transfers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\AboutDlg.resx">
+      <DependentUpon>AboutDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\BrowseDlg.resx">
+      <DependentUpon>BrowseDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\ChattersDlg.resx">
+      <DependentUpon>ChattersDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\DownloadUrl.resx">
+      <DependentUpon>DownloadUrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\FileAlertDlg.resx">
+      <DependentUpon>FileAlertDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\MainDlg.resx">
+      <DependentUpon>MainDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\MoreSearchInfoDlg.resx">
+      <DependentUpon>MoreSearchInfoDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\NewVersionDlg.resx">
+      <DependentUpon>NewVersionDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\OptionsDlg.resx">
+      <DependentUpon>OptionsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\TransfersMoreInfoDlg.resx">
+      <DependentUpon>TransfersMoreInfoDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\Dialogs\WizardDlg.resx">
+      <DependentUpon>WizardDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWF-UI\OwnerDraw\ElTabControl.resx">
+      <DependentUpon>ElTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

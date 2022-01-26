@@ -1,0 +1,24 @@
+fix these bugs:
+
+"no pushed servent found" occuring when downloading (DownloadManager.cs)
+"GetType: Illegal characters in path." (UniQueryHit.cs)
+multiple g2 "qka ???????" errors (Messages.cs)... maybe collection cleaning too frequent? ("hubCache removed" in HostCache.cs)
+------------------------------
+near releases:
+
+do beta testing of all filescope features
+implement /QH2/HG, /QH2/H/URL, /QH2/H/G in g2
+tiger tree hashing
+support all types of hashes everywhere (this is tricky... contact Matt at mz392@nyu.edu before attempting)
+preview download feature
+change the mp3 info column header in the seach view into a "media info" header
+download mesh with g1/g2 protocols
+------------------------------
+future releases:
+
+draw better icons
+embed progress bars into downloads/uploads listviews
+make a message box that doesn't beep
+time left ("ETA") feature to uploads/downloads
+wait for Mono's SWF implementation to be finished so that this app could run on linux
+xml support in g2
