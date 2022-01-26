@@ -2,9 +2,12 @@
 a P2P file sharing application that connects to Gnutella, Gnutella2, eDonkey, and OpenNap. It is cross-platform and written C#.
 
 Credits: 
-Written by Matt Zyzik
-Email: mz392@nyu.edu
-Homepage: http://www.filescope.com, http://www.sf.net/projects/filescope
+
+    Written by Matt Zyzik
+    Email: mz392@nyu.edu
+    Homepage: http://www.filescope.com, http://www.sf.net/projects/filescope
+
+    Update for Compile's with VS2017 added. 
 
 
     Completely FREE
